@@ -1,3 +1,5 @@
+Python中布尔值为false的对象：
+
 1. False
 2. None
 3. 所有值为零的数 
