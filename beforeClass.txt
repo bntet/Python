@@ -1,0 +1,80 @@
+课堂作业
+一、'hello,world'.replace('l','*')
+
+
+二、1.  ('Good'.lower()+'!')*3
+	2.  (('Good'+'!')*3).lower()
+
+
+三、'Fh1qoWe92QbvC'.swapcase()
+
+
+四、
+str = "Fh1qoWe92QbvC"
+list=[]
+if str.isdigit():
+    print(str)
+else:
+    for i in str:
+        if i>="0" and i<="9":
+            list.append(i)
+    print(list)
+
+
+五、sorted(lst)
+
+
+六、del l[3]   del l[4]
+
+
+七、
+str='hello world'
+li = list(str)
+new_li = []
+for i in str:
+    if i not in new_li:
+        new_li.append(i)
+d={}
+for i in new_li:
+    d[i] = li.count(i)	
+print (d)
+
+
+八、
+def fun():
+    num = 0
+    letter= 0
+    space = 0
+    other = 0
+    str='a dfsa ,/.12341'
+    for i in str:
+        if i.isdigit():
+            num+=1
+        elif i.isalpha():
+            letter+=1
+        elif i == " ":
+            space+=1
+        else:
+            other+=1
+    print (num,space,letter,other)
+fun()
+
+九、
+def fun(str):
+    return str.replace(' ','')
+print(fun("   12 3 4"))
+
+
+十、
+import random
+num = random.randint(1,100)
+num2 = 0
+while num!=num2:
+    new_num = int(input('请输入50数字'))
+    num2 = int(new_num)
+    if num2 > num:
+        print('你输入的数字大了')
+    if num2 < num:
+        print("你输入的数字小了")
+if num == num2:
+    print("猜对了，游戏结束")
