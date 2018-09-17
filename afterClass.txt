@@ -1,0 +1,35 @@
+¿Îºó×÷Òµ
+1.
+def fun():
+    for i in range(1,10):
+        print("\n")
+        for j in range(1,i+1):
+            print("%d*%d=%d" % (i,j,i*j),end=" ")
+fun()
+
+
+2.
+def fun():
+    for i in range(1,101):
+        if i%3==0:
+            print("fizz")
+        if i%5==0:
+            print("buzz")
+        if i%3==0 and i%5==0:
+            print("fizzbuzz")
+        else:
+            print(i)
+fun()
+
+
+3.
+a = 0
+b = 1
+i = 1
+print(b)
+while i<=100:
+    if i == a+b:
+        print(i)
+        a = b
+        b = i
+    i+=1
